@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test Suite">
+    <test name="Testing Parameterization One">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="username" value="testingse@gmail.com"/>
+        <parameter name="password" value="testing123"/>
+        <classes>
+            <class name="com.testautomation.test.DataParamsTestA" />
+        </classes>
+    </test>
+    <test name="Testing Parameterization Two">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="username" value="testingsession@hotmail.com"/>
+        <parameter name="password" value="test123"/>
+        <classes>
+            <class name="com.testautomation.test.DataParamsTestB" />
+        </classes>
+    </test>
+</suite>
